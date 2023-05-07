@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Css/style.css">
+  <link rel="stylesheet" href="../Css/bootstrap.css">
+  <link rel="stylesheet" href="../Css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+</head>
+
+<body class="body">
+  <div class="slider-container">
+    
+    <div class="slider">
+      <img src="../images/pexels-maria-camila-castaño-7358862.jpg" alt="Image 1" width="100%">
+      <img src="../images/pexels-lerone-pieters-16116630.jpg" alt="Image 2" style="width: 100%;">
+      <img src="../images/pexels-pixabay-163867.jpg" alt="Image 3" style="width: 100%;"> 
+      <img src="../images/pexels-kellie-churchman-1001682.jpg" alt="Image 4" style="width: 100%;">
+    </div>
+  </div>
+  <div class="slider-text">
+    <h1>Fadime</h1>
+    <p>Hoşgeldiniz</p>
+  </div>
+  <div class="button">
+    <button class="prev-btn"><i class="fas fa-angle-left"></i></button>
+    <button class="next-btn"><i class="fas fa-angle-right"></i></button>
+  </div>
+
+  <div class="genel">
+    <!--Yan Menu-->
+    <div class="menu">
+      <form action="../php/arama.php" method="GET">
+        <input type="text" name="query" placeholder="Arama yapın...">
+        <button type="submit" style="background-color: rgb(0, 0, 0); border: none;"><i
+            class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+      </form>
+
+      <ul>
+        <li><a href="../Html/index.html">Ana Sayfa</a></li>
+        <li><a href="../Html/kitapOnerileri.html">Kitap Önerileri</a></li>
+        <li><a href="../Html/foto.html">Fotograflar</a></li>
+        <li><a href="../Html/makale.html">Makaleler</a></li>
+        <li><a href="../Html/sendeyaz.html">Sende Yaz</a></li>
+        <li><a href="../Html/siirler.html">Şiirler</a></li>
+        <li><a href="../Html/giryap.html">Giriş Yap</a></li>
+        <li><a href="../Html/kayitol.html">Kayıt ol</a></li>
+      </ul>
+    </div>
+
+    <!--İçerik-->
+    <div class="icerik">
+      <div class="usticerik">
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>fadime</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>fadime</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>fadime</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!--ALt İçerik-->
+      <div class="usticerik alt">
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>örnek</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>örnek</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+        <div class="bilgi">
+          <div class="res"><img src="../images/images.jpg" alt=""></div>
+          <div class="yazi">
+            <h2>örnek</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio error hic at nobis nesciunt...
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../javascript/script.js"></script>
+</body>
+
+</html>

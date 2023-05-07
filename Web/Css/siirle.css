@@ -1,0 +1,68 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+nav {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+main {
+	margin: 20px;
+}
+
+.poem {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.poem h2 {
+	margin-top: 0;
+}
+
+.poem p {
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.poem footer {
+	color: #999;
+	font-size: 0.8em;
+	text-align: right;
+}

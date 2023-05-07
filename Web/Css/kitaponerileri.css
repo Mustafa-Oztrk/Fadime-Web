@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: linear-gradient(to right, #6600ff, #cc00ff);
+    height: auto;
+    min-height: 120vh;
+    justify-content: center;
+}
+
+
+
+.wrapper {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+
+}
+
+nav ul {
+
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav #toggle,
+nav label {
+    display: none;
+}
+
+.dis {
+    width: 70%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+
+.ic {
+    display: inline-flex;
+    width: 100%;
+    height: 270px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.kapak {
+    width: 150px;
+    height: 170px;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.kapak img {
+    width: 120px;
+
+    border-radius: 10px;
+    margin-top: -10px;
+
+}
+
+.kitapbilg {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.kitapbilg h2 {
+    font-size: 25px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    text-decoration: underline rebeccapurple;
+}
+
+
+.kitapbilg p {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 380px) {
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked~.menu {
+        height: 70%;
+    }
+
+
+    .body {
+        background-color: #6600ff;
+        height: auto;
+        justify-content: center;
+    }
+    .dis {
+        width: 70%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+    }
+    
+    
+    .ic {
+        display: inline-flex;
+        width: 100%;
+        height: 160px;
+        margin-top: 50px;
+        background-color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+    
+    .kapak {
+        width: 110px;
+        height: 90px;
+        background-color: rgb(255, 255, 255);
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+        align-items: center;
+    }
+    
+    .kapak img {
+        height: 90px;
+        width: 60px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    
+    }
+    
+    .kitapbilg {
+        width: 80%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    
+    .kitapbilg h2 {
+        font-size: 19px;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-decoration: underline rebeccapurple;
+    }
+    
+    
+    .kitapbilg p {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    background-image: linear-gradient(to right, #6600ff, #cc00ff);
+    height: auto;
+    min-height: 120vh;
+    justify-content: center;
+}
+
+.wrapper {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+
+}
+
+nav ul {
+
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav #toggle,
+nav label {
+    display: none;
+}
+
+.dissendeyz {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.yansendyz {
+    width: 100%;
+    height: 600px;
+    display: inline-flex;
+   
+}
+
+.yazardis {
+    width: 600px;
+    height: 500px;
+    margin-top: 100px;
+    align-items: center;
+    
+}
+
+.yazarfoto {
+    z-index: 1;
+    width: 130px;
+    height: 130px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yazarfoto img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.yazaryazi {
+    z-index: 2;
+    width: 500px;
+    height: 400px;
+    border: 4PX solid white;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.yazaryazi p {
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.yazaryazi h1 {
+
+    padding: 15px;
+    margin-top: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+@media screen and (max-width: 380px) {
+
+
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked~.menu {
+        height: 70%;
+    }
+
+
+    .body {
+        background-color: #6600ff;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dissendeyz {
+        margin-top: -30px;
+        width: 300px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+
+    .yansendyz {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .yansendyz {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .yazardis {
+        width: 300px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .yazaryazi {
+        
+  
+        width: 300px;
+        height: 230px;
+        border: 4PX solid white;
+       
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .yazarfoto {
+        z-index: 1;
+        width: 90px;
+        height: 80px;
+        border: 5px solid white;
+        border-radius: 50%;
+        position: relative;
+      
+    }
+    
+    .yazarfoto img {
+        height: 80px;
+        width: 90px;
+        border-radius: 50%;
+        clip-path: none;
+    }
+    .yazaryazi p {
+        font-size: 12px;
+        padding: 15px;
+        margin-top: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .yazaryazi h1 {
+
+        padding: 10px;
+        margin-top: -15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+}

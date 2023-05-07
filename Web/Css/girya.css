@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: linear-gradient(to right, #6600ff, #cc00ff);
+    height: auto;
+    min-height: 120vh;
+    justify-content: center;
+}
+
+
+
+.wrapper {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+
+}
+
+nav ul {
+
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav #toggle,
+nav label {
+    display: none;
+}
+
+.container {
+    height: 550px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 5px solid rebeccapurple;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    text-align: center;
+
+}
+
+
+
+.yazibg {
+    background-color: rebeccapurple;
+    height: 200px;
+    border-radius: 40px 40px 50% 50%;
+    font-variant: inherit;
+    user-select: none;
+    display: flex;
+}
+
+.yazibg span {
+    margin-top: 50px;
+    width: 100%;
+    height: 20px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+.forms {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.forms input {
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: rebeccapurple;
+    display: inline-block;
+}
+
+
+.forms input:focus {
+    box-shadow: 10px rebeccapurple;
+
+}
+
+.button {
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+    border: 3px solid rgb(168, 20, 173);
+}
+
+.reset {
+    font-size: 20px;
+    text-decoration: underline rebeccapurple;
+}
+
+@media screen and (max-width: 380px) {
+    nav .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav label {
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked~.menu {
+        height: 70%;
+    }
+/*sayfa geneli */
+
+    .container {
+        height: 450px;
+        width: 330px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        border: 5px solid rgb(102, 51, 153);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+    
+    }
+    
+    .yazibg {
+        background-color: rebeccapurple;
+        height: 120px;
+        border-radius: 40px 40px 50% 50%;
+        font-variant: inherit;
+        user-select: none;
+        display: flex;
+    }
+    
+    .yazibg span {
+        margin-top: 30px;
+        width: 100%;
+        height: 20px;
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    .forms {
+        width: 250px;
+        height: 200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+    
+    .forms input {
+        width: 250px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        color: rebeccapurple;
+        display: inline-block;
+    }
+    
+  
+    
+    .forms input:focus {
+        box-shadow: 10px rebeccapurple;
+        
+    }
+    
+    .button {
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: white;
+        outline: none;
+        width: 50px;
+        border: 3px solid rgb(168, 20, 173);
+    }
+    
+    .reset {
+        font-size: 15px;
+        text-decoration: underline rebeccapurple;
+    }
+
+}
